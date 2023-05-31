@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
 *{
     margin: 0;
     padding: 0;
@@ -180,9 +191,6 @@ header nav .nav-links li a {
     background: transparent;
     text-decoration: none;
 }
-.slides .slide__caption .outline-btn:hover {
-    background: red;
-}
 .slides .slide__caption--active {
     animation-name: fadeInUpSD;
     -webkit-animation-duration: 1s;
@@ -190,7 +198,11 @@ header nav .nav-links li a {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
+.slides .slide__caption .outline-btn:hover{
+    background: red;
+}
 .material-icons {
+    color: #fff;
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -215,4 +227,267 @@ header nav .nav-links li a {
         opacity: 1;
         transform: none;
     }
+}
+
+.parallax {
+    height: 300px;
+    background: linear-gradient(to right, rgb(39 39 39 / 70%), rgb(15 15 15 / 70%)), url('https://wallpaper.dog/large/20500871.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.parallax-content {
+    text-align: center;
+    padding: 20px;
+}
+.newsletter__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter p.title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.newsletter p.description {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F8F8F8;
+}
+.newsletter--form .form-mail {
+    display: flex;
+    align-items: flex-end;
+}
+.newsletter--form .form-mail .form-mail__inputs {    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newsletter--form input {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 275;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #E51B27;
+    padding: 10px 20px;
+    width: 100%;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+.newsletter--form input:focus {
+    outline-width: 0;
+}
+.newsletter--form button {
+    background: transparent;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 10px;
+    transition: all 0.4s ease-in-out;
+}
+/*selector*/
+.selector {
+	border: 1px solid #e2eded;
+	border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+}
+
+.custom-selector {
+	position: relative;
+	display: block;
+	overflow: visible;
+	font-size: 1.5em;
+}
+
+.custom-selector a:hover {
+	text-decoration: none !important;
+}
+
+.custom-selector * {
+	user-select: none;
+}
+
+.custom-selector *:focus {
+	outline: none;
+}
+
+.custom-selector input {
+	color: #e2eded;
+}
+
+#select-button {
+	position: relative;
+	height: auto;
+	padding: 10px 20px;
+	background-color: #3c3f45;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 600;
+	transition: .3s all ease-in-out;
+}
+
+.label {
+	display: none;
+}
+
+#chevrons {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 20px;
+	padding: 9px 14px;
+}
+#chevrons svg {
+	width: 100%;
+	height: 100%;
+}
+
+#options-view-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 3;
+}
+
+#selected-value {
+	font-size: 1em;
+	line-height: 1;
+	margin-right: 26px;
+}
+
+.option,
+.label {
+	color: #000;
+	font-size: 1em;
+	font-weight: 500;
+}
+
+#chevrons {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	bottom: 0;
+	width: 20px;
+	padding: 12px 14px;
+}
+
+#chevrons svg {
+	width: 100%;
+	height: 100%;
+}
+
+#options-view-button:checked + #select-button #chevrons i {
+	color: #000;
+}
+
+#options-view-button:checked + #select-button {
+	background: #000;
+}
+
+.options {
+	position: absolute;
+	left: 0;
+	width: 250px;
+}
+
+#options {
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 298px;
+	margin: 0 auto;
+	background-color: #fff;
+	z-index: 1000;
+}
+
+#options::-webkit-scrollbar {
+	width: 10px;
+}
+
+#options::-webkit-scrollbar-track {
+	background: #d0d0ce;
+}
+
+#options::-webkit-scrollbar-thumb {
+	background: #555;
+}
+
+#options::-webkit-scrollbar-thumb:hover {
+	background: #000;
+}
+
+#options-view-button:checked ~ #options {
+    width: 100%;
+	max-height: 150px;
+	overflow-y: scroll;
+}
+
+.option {
+	position: relative;
+	line-height: 1;
+	z-index: 2;
+	transition: none;
+}
+
+#options-view-button:checked ~ #options .option i {
+	display: block;
+	padding: 12px 0;
+	background-color: #fff;
+}
+
+#options-view-button:checked ~ #options .label {
+	display: block;
+	padding: 1em 2em;
+}
+
+.label {
+	text-decoration: none;
+	font-weight: 600;
+}
+
+span.label:visited {
+	color: #000;
+}
+span.label:hover {
+	color: #fff;
+}
+.option {
+	background: #f3f3f3;
+}
+
+.option:hover {
+	color: #fff;
+	background: #3c3f45;
+}
+
+.option:hover a {
+	color: #fff;
+	transition: none;
 }
