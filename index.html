@@ -1,47 +1,66 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="main">
-        <nav>
-            <div class="logo">
-                <img src="./img/logo.png" alt="">
-            </div>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Productos</a></li>
-                        <li><a href="">Puntos de venta</a></li>
-                        <li><a href="">Comunidad</a></li>
-                        <li><a href="">Asesor</a></li>
-                        <li><a href="">Centro de ayuda</a></li>
-                    </ul>
+    <section class="main">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
                 </div>
-        </nav>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Puntos de venta</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Asesor</a></li>
+                    <li><a href="#">Centro de ayuda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
         <div class="info">
             <div class="overlay"></div>
             <img src="img/camera.png" alt="info-img" class="info-img" id="info-img">
             <div id="circle" class="circle">
                 <div class="feature feature-1">
                     <img src="./img/camera-icon.png" alt="camera">
-                    <div><h1>Cámaras</h1></div>
+                    <div>
+                        <h1>Cámaras</h1>
+                        <p class="description">Si te atrae el streaming, éste es el lugar para ti. ¡Adelante, anímate!.</p>
+                    </div>
                 </div>
                 <div class="feature feature-2">
-                    <img src="./img/controls-icon.png" alt="controls">                    
-                    <div><h1>Mandos</h1></div>
+                    <img src="./img/controls-icon.png" alt="controls">
+                    <div>
+                        <h1>Mandos</h1>
+                        <p class="description">Tus manos saben lo que necesitan; escúchalas. Para consolas y PC.</p>
+                    </div>
                 </div>
                 <div class="feature feature-3">
                     <img src="./img/mouse-icon.png" alt="mouse">
-                    <div><h1>Ratones</h1></div>
+                    <div>
+                        <h1>Mouse</h1>
+                        <p class="description">Precisión, rapidez, comodidad, durabilidad y mucha luz. Ratones para ganar.</p>
+                    </div>
                 </div>
                 <div class="feature feature-4">
                     <img src="./img/earphones-icon.png" alt="earphones">
-                    <div><h1>Audio</h1></div>
+                    <div>
+                        <h1>Audio</h1>
+                        <p class="description">Auriculares y micrófonos que liberan toda la fuerza del sonido. ¡Conócelos!.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,59 +69,109 @@
             <h3>Features</h3>
             <img src="./img/arrow.png" alt="arrow" class="control-btn down-control" id="down-control">
         </div>
-    </div>
+        <div class="slides">
+            <div id="slide__caption--0" class="slide__caption slide__caption--active">
+                <h1>Cámara</h1>
+                <p class="subtitle mb-5">
+                    Captura tu pasión por el juego con nuestra cámara web especializada para gamers. Diseñada para ofrecerte una calidad de imagen excepcional y una transmisión en tiempo real sin interrupciones, esta cámara te permitirá mostrar tus habilidades a todo el mundo. Con una resolución nítida, enfoque automático y capacidad de grabación de video en alta definición, serás el centro de atención en tus transmisiones y videollamadas. ¡Destaca entre los demás jugadores con nuestra cámara web gamer y lleva tu presencia en línea al siguiente nivel!
+                </p> 
+                <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self" class="outline-btn" tabindex="0">
+                    Ver más
+                </a>
+            </div>
+            <div id="slide__caption--1" class="slide__caption">
+                <h1>Audifonos Gamer</h1>
+                <p class="subtitle mb-5">
+                    Sumérgete en el mundo del juego con nuestros audífonos gamer de primera clase. Con sonido envolvente de alta calidad, 
+                    comodidad duradera y micrófono incorporado, estos audífonos te transportarán directamente al centro de la acción. 
+                    Obtén una ventaja auditiva y sumérgete en una experiencia de juego inmersiva con nuestros audífonos gamer. 
+                    ¡Prepárate para escuchar cada detalle y comunicarte con claridad en tus partidas más intensas!
+                </p> 
+                <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self" class="outline-btn" tabindex="0">
+                    Ver más
+                </a>
+            </div>
+            <div id="slide__caption--2" class="slide__caption">
+                <h1>Mouse gamer</h1>
+                <p class="subtitle mb-5">
+                    ¡Mejora tu juego con el mouse gamer definitivo! Este mouse de alto rendimiento combina precisión milimétrica, 
+                    velocidad de respuesta ultrarrápida y diseño ergonómico. Domina el campo de batalla virtual con este poderoso aliado en tus manos. 
+                    ¡Lleva tu juego al siguiente nivel ahora!
+                </p> 
+                <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self" class="outline-btn" tabindex="0">
+                    Ver más
+                </a>
+            </div>
+            <div id="slide__caption--3" class="slide__caption">
+                <h1>Mandos</h1>
+                <p class="subtitle mb-5">
+                    Potencia tu experiencia de juego con nuestro mando gamer de última generación. Diseñado para brindar precisión y comodidad, este control te permitirá dominar cualquier juego con facilidad. Con botones programables, vibración inmersiva y conectividad inalámbrica, disfrutarás de una experiencia de juego fluida y emocionante. ¡Eleva tu nivel de juego con nuestro mando gamer y conquista la victoria con estilo!
+                </p> 
+                <a href="https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/" target="_self" class="outline-btn" tabindex="0">
+                    Ver más
+                </a>
+            </div>
+        </div>
+        </main>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script>
         let circle = document.getElementById("circle");
         let upControl = document.getElementById("up-control");
-        let downControl = document.getElementById("down-control");  
+        let downControl = document.getElementById("down-control");
+        let slideCaptions = document.getElementsByClassName("slide__caption");
+        
 
         let rotateValue = circle.style.transform;
         let rotateSum;
 
         let index = 0;
 
-        upControl.onclick = function (){
+        const getSrc = () => {
+            switch (index) {
+                case 1:
+                    return "./img/earphones.png";
+                case 2:
+                    return "./img/mouse.png";
+                case 3:
+                    return "./img/controls.png";
+                default:
+                    return "./img/camera.png";
+            }
+        }
+
+        upControl.onclick = function () {
             rotateSum = rotateValue + "rotate(-90deg)";
             circle.style.transform = rotateSum;
             rotateValue = rotateSum;
-            index = index < 3 ? index + 1 : 0 ;
-            console.log("index:",index)
-            switch (index) {
-                case 1:
-                    document.getElementById("info-img").src="./img/earphones.png";
-                    break;
-                case 2:
-                    document.getElementById("info-img").src="./img/mouse.png";                    
-                    break;
-                case 3:
-                    document.getElementById("info-img").src="./img/controls.png";                    
-                    break;
-                default:
-                    document.getElementById("info-img").src="./img/camera.png";
-                    break;
+            index = index < 3 ? index + 1 : 0;
+            document.getElementById("info-img").src = getSrc();
+            console.log("slideCaptions:",slideCaptions)
+            for (const slideCaption of slideCaptions) {
+                slideCaption.classList.remove("slide__caption--active")
+            }
+            let slideCaption = document.getElementById("slide__caption--"+index);
+            if(slideCaption){
+                slideCaption.classList.add("slide__caption--active")
             }
         }
-        downControl.onclick = function (){
+        downControl.onclick = function () {
             rotateSum = rotateValue + "rotate(90deg)";
             circle.style.transform = rotateSum;
             rotateValue = rotateSum;
             index = index > 0 ? index - 1 : 3;
-            console.log("index:",index)
-            switch (index) {
-                case 1:
-                    document.getElementById("info-img").src="./img/earphones.png";
-                    break;
-                case 2:
-                    document.getElementById("info-img").src="./img/mouse.png";                    
-                    break;
-                case 3:
-                    document.getElementById("info-img").src="./img/controls.png";                    
-                    break;
-                default:
-                    document.getElementById("info-img").src="./img/camera.png";
-                    break;
+            document.getElementById("info-img").src = getSrc();
+            console.log("slideCaptions:",slideCaptions)
+            for (const slideCaption of slideCaptions) {
+                slideCaption.classList.remove("slide__caption--active")
             }
+            let slideCaption = document.getElementById("slide__caption--"+index);
+            if(slideCaption){
+                slideCaption.classList.add("slide__caption--active")
+            }
+            
         }
     </script>
 </body>
+
 </html>
