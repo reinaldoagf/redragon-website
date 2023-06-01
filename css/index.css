@@ -2,22 +2,26 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
     src: local('Material Icons'),
-      local('MaterialIcons-Regular'),
-      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-  }
-*{
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-body {    
+
+body {
     background: #212121;
 }
-.main{
+
+.main {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -25,7 +29,8 @@ body {
     background: linear-gradient(to right, rgb(39 39 39 / 70%), rgb(15 15 15 / 70%)), url(https://cdn.wallpapersafari.com/90/62/vgls0P.jpg);
     background-size: cover;
 }
-header nav{
+
+header nav {
     width: 80%;
     position: sticky;
     margin: 20px auto;
@@ -33,25 +38,31 @@ header nav{
     align-items: center;
     z-index: 1;
 }
-header nav .logo{
+
+header nav .logo {
     flex-basis: 20%;
 }
-header nav .logo img{
+
+header nav .logo img {
     width: 100px;
 }
-header nav .nav-links{
+
+header nav .nav-links {
     flex: 1;
     text-align: right;
 }
+
 header nav .nav-links li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
 }
+
 header nav .nav-links li a {
     text-decoration: none;
     color: #fff;
 }
+
 .info {
     width: 1000px;
     height: 1000px;
@@ -60,7 +71,8 @@ header nav .nav-links li a {
     left: -10%;
     transform: translateY(-50%);
 }
-.overlay{
+
+.overlay {
     width: 0;
     height: 0;
     border-top: 500px solid #212121;
@@ -72,7 +84,8 @@ header nav .nav-links li a {
     top: 0;
     z-index: 1;
 }
-.circle{
+
+.circle {
     width: 1000px;
     height: 1000px;
     position: absolute;
@@ -82,39 +95,47 @@ header nav .nav-links li a {
     transform: rotate(0deg);
     transition: 1s;
 }
-.feature{
+
+.feature {
     position: absolute;
     display: flex;
     color: #fff;
     max-width: 300px;
 }
-.feature img{
+
+.feature img {
     width: 70px;
     height: 70px;
 }
-.feature div{
+
+.feature div {
     margin-left: 30px;
 }
-.feature-1{
+
+.feature-1 {
     top: 450px;
     left: 650px;
 }
-.feature-2{
+
+.feature-2 {
     top: 50px;
     left: 350px;
     transform: rotate(-90deg);
 }
-.feature-3{
+
+.feature-3 {
     bottom: 450px;
     left: 0px;
     transform: rotate(-180deg);
 }
-.feature-4{
+
+.feature-4 {
     bottom: 50px;
-    right: 350px;    
+    right: 350px;
     transform: rotate(-270deg);
 }
-.info-img{
+
+.info-img {
     width: 400px;
     position: absolute;
     top: 50%;
@@ -122,18 +143,21 @@ header nav .nav-links li a {
     z-index: 1;
     transform: translateY(-50%);
 }
-.controls{
+
+.controls {
     position: absolute;
     right: 10%;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
 }
-.controls h3{
+
+.controls h3 {
     margin: 15px 0;
     color: #fff;
 }
-.control-btn{
+
+.control-btn {
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -141,10 +165,12 @@ header nav .nav-links li a {
     padding: 5px;
     border-radius: 100%;
 }
-.up-control{
+
+.up-control {
     transform: rotate(180deg);
 }
-.slides .slide__caption{
+
+.slides .slide__caption {
     position: absolute;
     color: #fff;
     left: 10%;
@@ -152,7 +178,8 @@ header nav .nav-links li a {
     opacity: 0;
     max-width: 80%;
 }
-.slides .slide__caption h1{
+
+.slides .slide__caption h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -161,7 +188,8 @@ header nav .nav-links li a {
     color: #FFFFFF;
     text-transform: uppercase;
 }
-.slides .slide__caption .subtitle{
+
+.slides .slide__caption .subtitle {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
@@ -169,7 +197,8 @@ header nav .nav-links li a {
     color: #FFFFFF;
     text-transform: uppercase;
 }
-.slides .slide__caption .outline-btn{
+
+.slides .slide__caption .outline-btn {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -191,6 +220,7 @@ header nav .nav-links li a {
     background: transparent;
     text-decoration: none;
 }
+
 .slides .slide__caption--active {
     animation-name: fadeInUpSD;
     -webkit-animation-duration: 1s;
@@ -198,9 +228,11 @@ header nav .nav-links li a {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
-.slides .slide__caption .outline-btn:hover{
+
+.slides .slide__caption .outline-btn:hover {
     background: red;
 }
+
 .material-icons {
     color: #fff;
     font-family: 'Material Icons';
@@ -218,11 +250,13 @@ header nav .nav-links li a {
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
 }
+
 @keyframes fadeInUpSD {
     0% {
         opacity: 0;
         transform: translateY(100px);
     }
+
     100% {
         opacity: 1;
         transform: none;
@@ -231,10 +265,6 @@ header nav .nav-links li a {
 
 .parallax {
     height: 300px;
-    background: linear-gradient(to right, rgb(39 39 39 / 70%), rgb(15 15 15 / 70%)), url('https://wallpaper.dog/large/20500871.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,11 +275,13 @@ header nav .nav-links li a {
     text-align: center;
     padding: 20px;
 }
-.newsletter__wrapper{
+
+.newsletter__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .newsletter p.title {
     font-family: "Montserrat";
     font-style: normal;
@@ -260,6 +292,7 @@ header nav .nav-links li a {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .newsletter p.description {
     font-family: "Montserrat";
     font-style: normal;
@@ -268,15 +301,18 @@ header nav .nav-links li a {
     line-height: 28px;
     color: #F8F8F8;
 }
+
 .newsletter--form .form-mail {
     display: flex;
     align-items: flex-end;
 }
-.newsletter--form .form-mail .form-mail__inputs {    
+
+.newsletter--form .form-mail .form-mail__inputs {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .newsletter--form input {
     font-family: "Montserrat";
     font-style: normal;
@@ -292,9 +328,11 @@ header nav .nav-links li a {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
+
 .newsletter--form input:focus {
     outline-width: 0;
 }
+
 .newsletter--form button {
     background: transparent;
     border: 1px solid white;
@@ -305,189 +343,246 @@ header nav .nav-links li a {
     margin-left: 10px;
     transition: all 0.4s ease-in-out;
 }
+
 /*selector*/
 .selector {
-	border: 1px solid #e2eded;
-	border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+    border: 1px solid #e2eded;
+    border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
 }
 
 .custom-selector {
-	position: relative;
-	display: block;
-	overflow: visible;
-	font-size: 1.5em;
+    position: relative;
+    display: block;
+    overflow: visible;
+    font-size: 1.5em;
 }
 
 .custom-selector a:hover {
-	text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .custom-selector * {
-	user-select: none;
+    user-select: none;
 }
 
 .custom-selector *:focus {
-	outline: none;
+    outline: none;
 }
 
 .custom-selector input {
-	color: #e2eded;
+    color: #e2eded;
 }
 
 #select-button {
-	position: relative;
-	height: auto;
-	padding: 10px 20px;
-	background-color: #3c3f45;
-	cursor: pointer;
-	color: #fff;
-	font-weight: 600;
-	transition: .3s all ease-in-out;
+    position: relative;
+    height: auto;
+    padding: 10px 20px;
+    background-color: #3c3f45;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: .3s all ease-in-out;
 }
 
 .label {
-	display: none;
+    display: none;
 }
 
 #chevrons {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	width: 20px;
-	padding: 9px 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    padding: 9px 14px;
 }
+
 #chevrons svg {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #options-view-button {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	opacity: 0;
-	cursor: pointer;
-	z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
 }
 
 #selected-value {
-	font-size: 1em;
-	line-height: 1;
-	margin-right: 26px;
+    font-size: 1em;
+    line-height: 1;
+    margin-right: 26px;
 }
 
 .option,
 .label {
-	color: #000;
-	font-size: 1em;
-	font-weight: 500;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 #chevrons {
-	position: absolute;
-	top: 2px;
-	right: 0;
-	bottom: 0;
-	width: 20px;
-	padding: 12px 14px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    padding: 12px 14px;
 }
 
 #chevrons svg {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-#options-view-button:checked + #select-button #chevrons i {
-	color: #000;
+#options-view-button:checked+#select-button #chevrons i {
+    color: #000;
 }
 
-#options-view-button:checked + #select-button {
-	background: #000;
+#options-view-button:checked+#select-button {
+    background: #000;
 }
 
 .options {
-	position: absolute;
-	left: 0;
-	width: 250px;
+    position: absolute;
+    left: 0;
+    width: 250px;
 }
 
 #options {
-	position: absolute;
-	right: 0;
-	left: 0;
-	width: 298px;
-	margin: 0 auto;
-	background-color: #fff;
-	z-index: 1000;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 298px;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 1000;
 }
 
 #options::-webkit-scrollbar {
-	width: 10px;
+    width: 10px;
 }
 
 #options::-webkit-scrollbar-track {
-	background: #d0d0ce;
+    background: #d0d0ce;
 }
 
 #options::-webkit-scrollbar-thumb {
-	background: #555;
+    background: #555;
 }
 
 #options::-webkit-scrollbar-thumb:hover {
-	background: #000;
+    background: #000;
 }
 
-#options-view-button:checked ~ #options {
+#options-view-button:checked~#options {
     width: 100%;
-	max-height: 150px;
-	overflow-y: scroll;
+    max-height: 150px;
+    overflow-y: scroll;
 }
 
 .option {
-	position: relative;
-	line-height: 1;
-	z-index: 2;
-	transition: none;
+    position: relative;
+    line-height: 1;
+    z-index: 2;
+    transition: none;
 }
 
-#options-view-button:checked ~ #options .option i {
-	display: block;
-	padding: 12px 0;
-	background-color: #fff;
+#options-view-button:checked~#options .option i {
+    display: block;
+    padding: 12px 0;
+    background-color: #fff;
 }
 
-#options-view-button:checked ~ #options .label {
-	display: block;
-	padding: 1em 2em;
+#options-view-button:checked~#options .label {
+    display: block;
+    padding: 1em 2em;
 }
 
 .label {
-	text-decoration: none;
-	font-weight: 600;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 span.label:visited {
-	color: #000;
+    color: #000;
 }
+
 span.label:hover {
-	color: #fff;
+    color: #fff;
 }
+
 .option {
-	background: #f3f3f3;
+    background: #f3f3f3;
 }
 
 .option:hover {
-	color: #fff;
-	background: #3c3f45;
+    color: #fff;
+    background: #3c3f45;
 }
 
 .option:hover a {
-	color: #fff;
-	transition: none;
+    color: #fff;
+    transition: none;
+}
+
+.products-markers {
+    position: relative;
+}
+
+.products-markers--markers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.products-markers--markers .custom-marker .dot,
+.products-markers--markers .custom-marker .dot {
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    border-radius: 100%;
+    background: #E51B27;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+    z-index: 999999999;
+}
+
+.products-markers--markers .custom-marker .dot:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -15px;
+    border-radius: 100%;
+    background: rgb(5 1 1 / 40%);
+    z-index: 1;
+    animation: 2.5s pulse ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
