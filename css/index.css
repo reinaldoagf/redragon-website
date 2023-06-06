@@ -776,9 +776,6 @@ span.label:hover {
     background-color: var(--color3);
 }
 
-.last-articles{
-    background: #131312;
-}
 /* last-articles */
 .last-articles__heading {
     display: flex;
@@ -841,7 +838,7 @@ span.label:hover {
   }
   .custom-card--two .wrapper {
     background-color: #fff;
-    min-height: 460px;
+    min-height: 360px;
     position: relative;
     overflow: hidden;
   }
@@ -942,3 +939,14 @@ span.label:hover {
     top: -10px;
   }
   
+  /* need help section */
+  .need-help__title {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
