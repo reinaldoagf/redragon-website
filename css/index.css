@@ -11,10 +11,17 @@
         url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
 }
 :root {
-    --color1: #232323;
-    --color2: #fff;
-    --color3: #E51B27;
-    --transitionDuration: 1s;
+    --black-color: #000;
+    --dark-color: #131312;
+    --gray1-color: #232323;
+    --gray2-color: #212121;
+    --gray3-color: #959592;
+    --white-color: #fff;
+    --red-color: #E51B27;
+    --green-color: #77d7b9;
+    --dark1-rgb-color: rgba(33,33,33,1);
+    --dark2-rgb-color: rgba(0, 0, 0, 0.5);    
+    --transition-duration: 1s;
 }
 * {
     margin: 0;
@@ -25,7 +32,7 @@ a {
     text-decoration: none !important;
 }
 .body {
-    background: #212121;
+    background:var(--gray1-color);
 }
 
 .main {
@@ -67,7 +74,7 @@ header nav .nav-links li {
 
 header nav .nav-links li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .info {
@@ -82,10 +89,10 @@ header nav .nav-links li a {
 .overlay {
     width: 0;
     height: 0;
-    border-top: 500px solid #212121;
+    border-top: 500px solid var(--gray2-color);
     border-right: 500px solid transparent;
-    border-bottom: 500px solid #212121;
-    border-left: 500px solid #212121;
+    border-bottom: 500px solid var(--gray2-color);
+    border-left: 500px solid var(--gray2-color);
     position: absolute;
     left: 0;
     top: 0;
@@ -106,7 +113,7 @@ header nav .nav-links li a {
 .feature {
     position: absolute;
     display: flex;
-    color: #fff;
+    color: var(--white-color);
     max-width: 300px;
 }
 
@@ -161,14 +168,14 @@ header nav .nav-links li a {
 
 .controls h3 {
     margin: 15px 0;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .control-btn {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 5px;
     border-radius: 100%;
 }
@@ -179,7 +186,7 @@ header nav .nav-links li a {
 
 .slides .slide__caption {
     position: absolute;
-    color: #fff;
+    color: var(--white-color);
     left: 10%;
     bottom: 50px;
     opacity: 0;
@@ -192,7 +199,7 @@ header nav .nav-links li a {
     font-weight: bold;
     font-size: 50px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-transform: uppercase;
 }
 
@@ -201,7 +208,7 @@ header nav .nav-links li a {
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-transform: uppercase;
 }
 
@@ -216,14 +223,14 @@ header nav .nav-links li a {
     justify-content: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #F8F8F8;
+    color: var(--white-color);
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--white-color);
     padding: 10px 20px;
     transition: all 0.4s ease-in-out;
-    white-space: nowrap;
+    white-color-space: nowrap;
     background: transparent;
     text-decoration: none;
 }
@@ -237,11 +244,11 @@ header nav .nav-links li a {
 }
 
 .slides .slide__caption .outline-btn:hover {
-    background: red;
+    background: var(--red-color);
 }
 
 .material-icons {
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -250,7 +257,7 @@ header nav .nav-links li a {
     letter-spacing: normal;
     text-transform: none;
     display: inline-block;
-    white-space: nowrap;
+    white-color-space: nowrap;
     word-wrap: normal;
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
@@ -275,7 +282,7 @@ header nav .nav-links li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--white-color);
 }
 
 .parallax-content {
@@ -297,7 +304,7 @@ header nav .nav-links li a {
     line-height: 40px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .newsletter p.description {
@@ -306,7 +313,7 @@ header nav .nav-links li a {
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
-    color: #F8F8F8;
+    color: var(--white-color);
 }
 
 .newsletter--form .form-mail {
@@ -327,9 +334,9 @@ header nav .nav-links li a {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-color);
     background: rgba(0, 0, 0, 0.1);
-    border: 1px solid #E51B27;
+    border: 1px solid var(--red-color);
     padding: 10px 20px;
     width: 100%;
     -webkit-backdrop-filter: blur(4px);
@@ -342,7 +349,7 @@ header nav .nav-links li a {
 
 .newsletter--form button {
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -386,7 +393,7 @@ header nav .nav-links li a {
     padding: 10px 20px;
     background-color: #3c3f45;
     cursor: pointer;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 600;
     transition: .3s all ease-in-out;
 }
@@ -470,7 +477,7 @@ header nav .nav-links li a {
     left: 0;
     width: 298px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--white-color);
     z-index: 1000;
 }
 
@@ -506,7 +513,7 @@ header nav .nav-links li a {
 #options-view-button:checked~#options .option i {
     display: block;
     padding: 12px 0;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 #options-view-button:checked~#options .label {
@@ -520,11 +527,11 @@ header nav .nav-links li a {
 }
 
 span.label:visited {
-    color: #000;
+    color: var(--black-color);
 }
 
 span.label:hover {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .option {
@@ -532,18 +539,18 @@ span.label:hover {
 }
 
 .option:hover {
-    color: #fff;
-    background: #3c3f45;
+    color: var(--white-color);
+    background: var(--gray1-color);
 }
 
 .option:hover a {
-    color: #fff;
+    color: var(--white-color);
     transition: none;
 }
 
 .products-markers {
     position: relative;
-    background: #131312;
+    background: var(--dark-color);
 }
 .products-markers__title {
     font-family: Montserrat;
@@ -551,7 +558,7 @@ span.label:hover {
     font-weight: 500;
     line-height: 60px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--white-color);
 }
 .products-markers--markers {
     position: absolute;
@@ -559,7 +566,7 @@ span.label:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(164,90,150,0) 25%, rgba(194,119,122,0) 50%, rgba(229,153,90,0) 75%, rgba(19,19,18,1) 100%);
+    background: linear-gradient(0deg, var(--dark1-rgb-color) 0%, rgba(164,90,150,0) 25%, rgba(194,119,122,0) 50%, rgba(229,153,90,0) 75%, rgba(19,19,18,1) 100%);
 }
 .products-markers--markers .custom-marker{
     position: absolute;
@@ -580,7 +587,7 @@ span.label:hover {
     line-height: 0;
     color: transparent;
     border-radius: 100%;
-    background: #E51B27;
+    background: var(--red-color);
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
     z-index: 999999999;
@@ -610,7 +617,7 @@ span.label:hover {
 }
 /* product card */
 .products_cards{
-    background: #212121;
+    background: var(--gray-color);
 }
 .products_cards__container{
     display: grid;
@@ -620,8 +627,9 @@ span.label:hover {
     gap: 15px;
 }
 .custom-card {
-    background-color: var(--color1);
-    color: var(--color2);
+    background-color: var(--gray2-color);
+    color: var(--white-color);
+    box-shadow: 0px 40px 50px var(--dark2-rgb-color);
     height: 450px;
     letter-spacing: 1px;
     border-radius: 20px;
@@ -636,7 +644,7 @@ span.label:hover {
 
 /* 'Nike' label in the background */
 .custom-card::before {
-    color: var(--color3);
+    color: var(--red-color);
     width: fit-content;
     height: fit-content;
     font-size: 200px;
@@ -652,20 +660,20 @@ span.label:hover {
 }
 .custom-card:hover:before{
     transform: translate(-50%, -30%) scale(0.2);
-    transition-duration: calc(var(--transitionDuration) / 2);
+    transition-duration: calc(var(--transition-duration) / 2);
     transition-property: width, height, transform;
     transition-timing-function: ease-in-out;
 }
 /* Circle */
 .custom-card::after {
-    background-color: var(--color3);
+    background-color: var(--red-color);
     width: 400px;
     height: 400px;
     border-radius: 50%;
     z-index: 0;
     
     /* Transition */
-    transition-duration: calc(var(--transitionDuration) / 2);
+    transition-duration: calc(var(--transition-duration) / 2);
     transition-property: width, height, transform;
     transition-timing-function: ease-in-out;
     
@@ -685,7 +693,7 @@ span.label:hover {
 .custom-card__img {
     height: 250px;
     z-index: 1;
-    transition: top var(--transitionDuration);
+    transition: top var(--transition-duration);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -698,7 +706,7 @@ span.label:hover {
 
 .custom-card__title {
     font-weight: 600;
-    transition: top var(--transitionDuration);
+    transition: top var(--transition-duration);
     position: absolute;
     left: 50%;
     top: 80%;
@@ -718,8 +726,8 @@ span.label:hover {
 }
 
 .custom-card__sizeNumber {
-    background-color: var(--color2);
-    color: var(--color1);
+    background-color: var(--white-color);
+    color: var(--gray1-color);
     width: 26px;
     height: 26px;
     padding: 5px 7px;
@@ -735,12 +743,12 @@ span.label:hover {
 }
 
 .custom-card__sizeNumber:hover {
-    background-color: var(--color3);
+    background-color: var(--red-color);
 }
 
 .custom-card__colorCircle {
-    background-color: var(--color2);
-    color: var(--color1);
+    background-color: var(--white-color);
+    color: var(--gray1-color);
     width: 20px;
     height: 20px;
     margin: 0 5px;
@@ -749,17 +757,17 @@ span.label:hover {
 }
 
 .custom-card__colorCircle:hover {
-    outline: solid 2px var(--color2);
+    outline: solid 2px var(--white-color);
 }
 
 .custom-card__link {
-    background-color: var(--color2);
-    color: var(--color1);
+    background-color: var(--white-color);
+    color: var(--gray1-color);
     padding: 10px 15px;
     text-decoration: none;
     font-weight: 600;
     border-radius: 3px;
-    transition: top var(--transitionDuration);
+    transition: top var(--transition-duration);
 
     /* Position */
     position: absolute;
@@ -773,7 +781,7 @@ span.label:hover {
 }
 
 .custom-card__link:hover {
-    background-color: var(--color3);
+    background-color: var(--red-color);
 }
 
 /* last-articles */
@@ -788,7 +796,7 @@ span.label:hover {
     font-weight: 300;
     line-height: 50px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--white-color);
 }
 .last-articles__heading .more {
     font-weight: 500;
@@ -800,13 +808,15 @@ span.label:hover {
     align-items: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #F8F8F8;
+    color: var(--white-color);
+}
+.your-class{
+    box-shadow: 0px 40px 50px var(--dark2-rgb-color);
 }
 /* blog */
 
 .custom-card--two {
     float: left;
-    /* padding: 0 1.7rem; */
     width: 100%;
   }
   .custom-card--two .menu-content {
@@ -825,7 +835,7 @@ span.label:hover {
     display: inline-block;
   }
   .custom-card--two .menu-content a {
-    color: #fff;
+    color: var(--white-color);
   }
   .custom-card--two .menu-content span {
     position: absolute;
@@ -837,7 +847,7 @@ span.label:hover {
     transform: translate(-50%, 0);
   }
   .custom-card--two .wrapper {
-    background-color: #fff;
+    background-color: var(--white-color);
     min-height: 360px;
     position: relative;
     overflow: hidden;
@@ -859,7 +869,7 @@ span.label:hover {
   }
   .custom-card--two .author {
     font-size: 12px;
-    color: #fff
+    color: var(--white-color);
   }
   .custom-card--two .title {
     margin-top: 10px;
@@ -867,7 +877,7 @@ span.label:hover {
   .custom-card--two .text {
     height: 90px;
     margin: 0;
-    color: #fff
+    color: var(--white-color);
   }
   .custom-card--two input[type=checkbox] {
     display: none;
@@ -883,8 +893,8 @@ span.label:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--color3);
-    color: #fff;
+    background-color: var(--red-color);
+    color: var(--white-color);
     padding: 0.8em;
   }
   .example-1 .date span {
@@ -904,11 +914,11 @@ span.label:hover {
     font-size: 12px;
   }
   .example-1 .content {
-    background-color: var(--color1);
+    background-color: var(--gray2-color);
     box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
   }
   .example-1 .title a {
-    color: gray;
+    color: var(--white-color);
   }
   
   .example-1 .menu-content {
@@ -924,7 +934,7 @@ span.label:hover {
   .example-1 .menu-content li {
     width: 33.333333%;
     float: left;
-    background-color: #77d7b9;
+    background-color: var(--green-color);
     height: 60px;
     position: relative;
   }
@@ -948,12 +958,12 @@ span.label:hover {
     text-transform: uppercase;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
 }
 /* need help */
 .need-help--items {
-    background: #212121;
-    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.5);
+    background: var(--gray1-color);
+    box-shadow: 0px 40px 50px var(--dark2-rgb-color);
     display: flex;
 }
 .need-help--items .item {
@@ -965,7 +975,7 @@ span.label:hover {
 .need-help--items .item--icon {
     width: 78px;
     height: 78px;
-    background: #E51B27;
+    background: var(--red-color);
     padding: 25px;
     margin-top: -39px;
 }
@@ -986,7 +996,7 @@ span.label:hover {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-align: center;
 }
 .need-help--items .item p.description {
@@ -996,7 +1006,7 @@ span.label:hover {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: #959592;
+    color: var(--gray3-color);
     opacity: 0.7;
 }
 .outline-btn {
@@ -1010,24 +1020,24 @@ span.label:hover {
     justify-content: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #F8F8F8;
+    color: var(--white-color);
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--white-color);
     padding: 10px 20px;
     transition: all 0.4s ease-in-out;
-    white-space: nowrap;
+    white-color-space: nowrap;
     background: transparent;
 }
 .outline-btn:hover {
-    background: #E51B27;
-    color: white;
+    background: var(--red-color);
+    color: white-color;
 }
 .need-help .cornered {
     width: 100%;
     height: 0px;
-    border-top: 25px solid #212121;
+    border-top: 25px solid var(--gray1-color);
     border-right: 25px solid transparent;
 }
 
@@ -1044,7 +1054,7 @@ span.label:hover {
 
 
 footer{
-    background-color: #272727;
+    background-color: var(--gray2-color);
     text-align: center;
     text-transform: uppercase;
     padding-top: 30px;
@@ -1058,30 +1068,30 @@ footer li{
 }
 
 .icons a{
-    background: #E51B27;
-    color: #272727;
+    background: var(--gray2-color);
+    color: var(--white-color);
     padding: 14px;
     font-size: 20px;
     border-radius: 100%;
     display: flex;
 }
 .icons a:hover{
-    color: #ffffff;
+    color: var(--white-color);
     transition: 0.5s;
 }
 
 .menu a{
-    color: #ffffff;
+    color: var(--white-color);
     text-transform: capitalize;
 }
 .menu a:hover{
-    color: #E51B27;
+    color: var(--red-color);
     transition: 0.5s;
 }
 
 .footer-copyright{
-    background-color:#E51B27;
-    color: #ffffff;
+    background-color: var(--red-color);
+    color: var(--white-color);
     padding: 15px;
     margin-top: 30px;
     text-transform: capitalize;
